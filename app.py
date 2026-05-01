@@ -40,9 +40,9 @@ if st.session_state.history:
         "Fraud Probability": st.session_state.history
     })
 
-    st.subheader("Prediction History")
-    fig = px.line(df, x="Prediction #", y="Fraud Probability")
-    st.plotly_chart(fig, use_container_width=True)
+    # st.subheader("Prediction History")
+    # fig = px.line(df, x="Prediction #", y="Fraud Probability")
+    # st.plotly_chart(fig, use_container_width=True)
 
 
 # Feature Importance (Static Plot)
