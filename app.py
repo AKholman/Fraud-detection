@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import pandas as pd
-# import plotly.express as px
+import plotly.express as px
 
 API_URL = "https://2linve340b.execute-api.us-east-1.amazonaws.com/prod/predict"
 
@@ -40,14 +40,14 @@ if st.session_state.history:
         "Fraud Probability": st.session_state.history
     })
 
-    # st.subheader("Prediction History")
-    # fig = px.line(df, x="Prediction #", y="Fraud Probability")
-    # st.plotly_chart(fig, use_container_width=True)
+    st.subheader("Prediction History")
+    fig = px.line(df, x="Prediction #", y="Fraud Probability")
+    st.plotly_chart(fig, use_container_width=True)
 
 
 # Feature Importance (Static Plot)
 
-# st.subheader("Feature Importance (XGBoost)")
-# importance = pd.read_csv("feature_importance.csv")
-# fig = px.bar(importance, x="importance", y="feature", orientation="h")
-# st.plotly_chart(fig, use_container_width=True)
+st.subheader("Feature Importance (XGBoost)")
+importance = pd.read_csv("feature_importance.csv")
+fig = px.bar(importance, x="importance", y="feature", orientation="h")
+st.plotly_chart(fig, use_container_width=True)
