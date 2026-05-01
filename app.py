@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 # import plotly.express as px
 
-API_URL = "https://<api-id>.execute-api.<region>.amazonaws.com/predict"
+API_URL = "https://2linve340b.execute-api.us-east-1.amazonaws.com/prod/predict"
 
 st.set_page_config(page_title="Fraud Detection", layout="centered")
 st.title("💳 Real-Time Fraud Detection")
