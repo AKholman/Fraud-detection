@@ -1,6 +1,15 @@
 ## 🚀 Live Demo
-👉 https://your-app-name.streamlit.app
+👉 https://fraud-detection-82yj5vkxtevasdsitmgjsm.streamlit.app/
 
+## ⚙️ How It Works
+UI (Streamlit) → API Gateway → AWS Lambda → XGBoost Model (S3)
+
+- The ML model is already trained and deployed on AWS
+- Streamlit UI only sends transaction data to the API
+- Lambda loads the model from S3 and returns real-time predictions
+- No setup or cloud access is required to use the app
+
+--------------------------------------------------------------------------------
 
 💳 Real-Time Credit Card Fraud Detection (End-to-End ML System)
 Overview
