@@ -57,7 +57,7 @@ Uploaded to AWS S3 for downstream training
 ----------------------------------------------
 🧠 Model Training (AWS EC2 – CPU Only)
 
-Instance: EC2 t2.micro / t3.micro (Free Tier)
+Instance: EC2 t3.micro (Free Tier)
 Framework: XGBoost (CPU mode)
 
 Key Techniques:
