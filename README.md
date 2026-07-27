@@ -72,9 +72,9 @@ Training Metrics
 | Metric          | Value      |
 | --------------- | ---------- |
 | Mean CV ROC-AUC | **0.9771** |
-| ROC-AUC (final) | **0.9973** |
-| Precision       | **0.8878** |
-| Recall          | **0.9704** |
+| ROC-AUC (final) | **0.9943** |
+| Precision       | **0.4887** |
+| Recall          | **0.9619** |
 
 ----------------------------------------------------
 
